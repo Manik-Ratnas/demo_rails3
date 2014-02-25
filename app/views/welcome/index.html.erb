@@ -1,0 +1,42 @@
+<div style="font-style:italic;font-size:60px;color:white;text-align:center"> The Manik Ratnas</div>
+<div class="container" style="  position:absolute;
+     z-index:15;
+     top:50%;
+     left:50%;">
+ <div id="fisheye" class="fisheye">
+		<div class="fisheyeContainter">
+			<a href="#" class="fisheyeItem"><%= image_tag("home.png") %><span>Home</span></a>
+			<a href="#" class="fisheyeItem"><%= image_tag("email.png") %><span>Email</span></a>
+			<a href="#" class="fisheyeItem"><%= image_tag("display.png") %><span>Display</span></a>
+			<a href="#" class="fisheyeItem"><%= image_tag("clock.png") %><span>Clock</span></a>
+			<a href="#" class="fisheyeItem"><%= image_tag("web.png") %><span>Web</span></a>
+			<a href="#" class="fisheyeItem"><%= image_tag("home.png") %><span>Home</span></a>
+			<a href="#" class="fisheyeItem"><%= image_tag("email.png") %><span>Email</span></a>
+			<a href="#" class="fisheyeItem"><%= image_tag("display.png") %><span>Display</span></a>
+			<a href="#" class="fisheyeItem"><%= image_tag("clock.png") %><span>Clock</span></a>
+			<a href="#" class="fisheyeItem"><%= image_tag("web.png") %><span>Web</span></a>
+		</div>
+ </div>
+</div>
+
+<script type="text/javascript">
+	
+	$(document).ready(
+		function()
+		{
+			$('#fisheye').Fisheye(
+				{
+					maxWidth: 50,
+					items: 'a',
+					itemsText: 'span',
+					container: '.fisheyeContainter',
+					itemWidth: 40,
+					proximity: 90,
+					halign : 'center'
+				}
+			)
+			
+		}
+	);
+
+</script>
